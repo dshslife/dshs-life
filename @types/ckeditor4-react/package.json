@@ -1,0 +1,34 @@
+{
+    "name": "@types/ckeditor",
+    "version": "4.9.9",
+    "description": "TypeScript definitions for CKEditor",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Thomas Wittwer",
+            "url": "https://github.com/wittwert",
+            "githubUsername": "wittwert"
+        },
+        {
+            "name": "Stuart Long",
+            "url": "https://github.com/stuartlong",
+            "githubUsername": "stuartlong"
+        },
+        {
+            "name": "Viktor Pegy",
+            "url": "https://github.com/viktorpegy",
+            "githubUsername": "viktorpegy"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/ckeditor"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "b13d6743ad3112972f5e5f664765c66557324d867703b74382bc7d90133559c8",
+    "typeScriptVersion": "2.8"
+}
