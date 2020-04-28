@@ -117,7 +117,6 @@ const CardCafeteria = styled.div`
   align-items: center;
   justify-content: center;
   width: 50%;
-  box-shadow: 3px 3px 70px 5px gray;
   padding: 20px;
   background: #43D2A0;
   color: white;
@@ -128,7 +127,6 @@ const CardRight = styled.div`
   align-items: center;
   justify-content: flex-start;
   flex: 1;
-  box-shadow: 3px 3px 70px 5px gray;
   padding: 20px;
   background: white;
   margin-left: 5px;
@@ -140,7 +138,6 @@ const CardRightFirst = styled.div`
   align-items: center;
   justify-content: flex-start;
   flex: 1;
-  box-shadow: 3px 3px 70px 5px gray;
   padding: 20px;
   background: white;
   margin-left: 5px;
@@ -165,7 +162,6 @@ const ProfileCard = styled.div`
   height: 65px;
   padding-left: 15%;
   margin: 5px;
-  box-shadow: 3px 3px 70px 5px gray;
   background: white;
 `;
 const NavigationBar = styled.div`
@@ -173,7 +169,6 @@ const NavigationBar = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   margin: 5px;
-  box-shadow: 3px 3px 70px 5px gray;
   background: white;
   width: 100%;
   

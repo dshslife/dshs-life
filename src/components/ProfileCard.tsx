@@ -29,7 +29,6 @@ const ProfileCard1 = styled.div`
   height: 65px;
   padding-left: 15%;
   margin: 5px;
-  box-shadow: 3px 3px 70px 5px gray;
   background: white;
 `;
 

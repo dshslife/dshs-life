@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from '@emotion/styled';
 import {TextField} from '@material-ui/core';
 import {Button} from 'react-bootstrap';
@@ -18,11 +18,20 @@ const useStyles = makeStyles({
 });
 export function NoticePage() {
   const classes = useStyles();
+  const [notice, setNotice] = useState([{
+    id: 214,
+    title: "기숙사 폐쇄 예정"
+  }]);
   return (
     <ParentDiv>
       <Card>
         <MainText>
+          <div>
           공지사항
+          </div>
+          <DSButton>
+            <Button variant="success">새글 작성</Button>
+          </DSButton>
         </MainText>
       </Card>
       <Card>
@@ -38,12 +47,16 @@ export function NoticePage() {
               </TableRow>
             </TableHead>
             <TableBody>
-              <TableRow key={"기숙사 폐쇄예정"}>
-                <TableCell component="th" scope="row">
-                  {"678"}
-                </TableCell>
-                <TableCell align="right">{"기숙사 폐쇄 안내"}</TableCell>
+              {
+                notice.map((item) => (
+                  <TableRow key={item.id}>
+                  <TableCell component="th" scope="row">
+                    {item.id}
+                  </TableCell>
+                  <TableCell align="right">{item.title}</TableCell>
               </TableRow>
+                ))
+              }
             </TableBody>
           </Table>
         </TableContainer>
@@ -70,12 +83,16 @@ const Card = styled.div`
 `;
 
 const DSButton = styled.div`
-  margin-top: 20px;
+  margin-left: auto;
+  margin-right: 20px;
 `;
 
-const MainText = styled.text`
+const MainText = styled.div`
   font-size: 25px;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
 `;
 
 export default function Views() {

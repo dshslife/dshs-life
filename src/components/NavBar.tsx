@@ -45,7 +45,6 @@ const NavigationBar = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   margin: 5px;
-  box-shadow: 3px 3px 70px 5px gray;
   background: white;
   width: 100%;
   
